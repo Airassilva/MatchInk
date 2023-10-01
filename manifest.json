@@ -13,8 +13,18 @@
         "photos","studies"
     ],
     "screenshots": [
+      {
+      "src": "MatchInk-Production/img/screenshots/screenshot1.png",
+      "sizes": "1280x800",
+      "type": "image/png"
+      },
+      {
+        "src": "MatchInk-Production/img/screenshots/screenshot2.png",
+        "sizes": "750x1334",
+        "type": "image/png"
+        }
+      ],
 
-    ],
     "icons": [
         {
         "src": "MatchInk-Production/img/icons/windows11/SmallTile.scale-100.png",
