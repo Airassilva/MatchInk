@@ -6,7 +6,7 @@
 "display": "standalone",
 "description": "Aplicação que mostra os estudios de tatuagem mais perto de você.",
 "lang": "pt",
-"theme_color": "##E82828",
+"theme_color": "#E82828",
 "background_color": "#ffffff",
 "orientation": "any",
 "categories": [
