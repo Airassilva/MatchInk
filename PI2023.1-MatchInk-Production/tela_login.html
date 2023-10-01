@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/tela_login.css">
+    <title>Tela login</title>
+</head>
+
+<body>
+ 
+    <main>
+        <!-- Buttões e campos-->
+        <div id="introducao">
+            <h2>BEM-VINDO DE VOLTA</h2>
+            <p>Por favor, faça login para continuar</p>
+        </div>
+
+        <div id="campoLogin">
+          
+            <form action="Local onde vai mandar os arquivos" method="post" onsubmit="alert('Enviado')">
+
+                <div id="login">
+
+                    <div id="email_input">
+                        <img src="img/Tela2/usuarioLogin.svg" alt=" Icone de usuário, é apenas um contorno da cabeça e ombros de uma pessoa, totalmente preto." id="iconeUsuario">
+
+                        <input type="email" name="emailLogin" class="entrada" aria-invalid placeholder="Endereço de email">
+
+                    </div>
+                    
+                    <p class="esqueceu"> 
+                        <a href="Pagina Esqueceu ALGO"> 
+
+                            Esqueceu email? 
+
+                        </a> 
+                    </p>
+                </div>
+
+                <div id="senha">
+
+                    <div id="senha_input">
+                        <img src="img/Tela2/cadeadoSenhaLogin.svg" alt="icone de um cadeado fechado para representar uma senha segura" id="iconeSenha">
+
+                        <img src="img/Tela2/sair.svg" alt=" icone de saida, é um semi quadrado com uma seta para fora dele simbolizando a saida de dentro dele" id="iconeSair">
+            
+                        <input type="password" name="senhaLogin" id="as" class="entrada" aria-invalid placeholder="Senha" >
+                    </div>
+
+                    <p class="esqueceu"> 
+                        <a href="Pagina Esqueceu ALGO"> 
+
+                            Esqueceu senha? 
+
+                        </a>
+                     </p>
+    
+                </div>
+               
+                <div id="manterConect" >
+                  
+                    <label>
+                        <input type="checkbox" name="manterConectado"  >
+                        <span class="checkbox_customizado"></span>
+                        Continuar conectado?
+                    </label>
+                </div>
+                
+                <button type="submit" class="centralizar" href="">
+                    
+                    <u>
+                        Log in
+                    </u>
+            
+                </button>
+
+            </form>    
+
+        </div>
+
+    </main>
+
+    <footer>
+        <!-- Parte de fundo, nada ainda?-->
+    </footer>
+    
+</body>
+</html>

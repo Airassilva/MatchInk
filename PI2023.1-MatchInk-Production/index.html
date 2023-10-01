@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MatchInk</title>
+	<script src="https://cdn.maptiler.com/maptiler-sdk-js/latest/maptiler-sdk.umd.min.js"></script>
+	<link href="https://cdn.maptiler.com/maptiler-sdk-js/latest/maptiler-sdk.css" rel="stylesheet" />
+	<link rel="stylesheet" href="assets/mapa.css">
+	<link rel="manifest" href="manifest.json">
+</head>
+<body>
+	<div id="map">
+	</div>
+
+	<div id="pesquisa">
+		<div id="detalhes">
+			<img src="img/Tela4/lupaPesquisa.svg" alt="">
+			<input type="text" placeholder="Pesquisar um estúdio de tatuagem">
+		</div>
+	</div>
+
+	<footer id="barraBaixo">
+		<div id="botoes">
+			<a href="tela_cadastro.html"><img src="img/barra de baixo/account.svg" alt=""></a>
+			<img src="img/barra de baixo/home.svg" alt="">
+			<a href="tela_login.html"><img src="img/barra de baixo/favorite.svg" alt=""></a>
+		</div>
+	</footer>
+
+	<script src="assets/mapa.js"></script>
+	<script src="assets/util.js"></script>
+	<!--Link do service worked-->
+	<script>
+		if (typeof navigator.serviceWorker !== 'undefined') {
+			navigator.serviceWorker.register('service-worked.js')
+		}
+	</script>
+
+</body>
+</html>
