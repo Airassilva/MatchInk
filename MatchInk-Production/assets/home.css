@@ -5,7 +5,7 @@
     margin: 0px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 570px) {
     body {
         background-image: url(../img/Tela1/imagemFundo.png);
         background-size: cover;
@@ -83,13 +83,13 @@
     }
 
     main .logo-google {
-        width: 30px;
+        width: 300px;
         border-radius: 7px;
         margin-bottom: 10px;
     }
 
     main .logo-facebook {
-        width: 30px;
+        width: 300px;
         border-radius: 7px;
     }
 
