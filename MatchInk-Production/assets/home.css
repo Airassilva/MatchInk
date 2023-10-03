@@ -5,7 +5,7 @@
     margin: 0px;
 }
 
-@media (max-width: 570px) {
+@media (max-width: 500px) {
     body {
         background-image: url(../img/Tela1/imagemFundo.png);
         background-size: cover;
