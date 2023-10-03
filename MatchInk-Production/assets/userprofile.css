@@ -9,7 +9,7 @@ body {
     width: 123px;
     height: 123px;
     margin-top: -73px;
-    background: url(/img/Tela6/fotoTatuadora.png);
+    background: url(../img/Tela6/fotoTatuadora.png);
     border: 4px solid white;
     border-radius: 50%;
 }
@@ -170,7 +170,7 @@ body {
 }
 
 #studio {
-    background-image: url("./img/Tela6/fotoEstudio.png");
+    background-image: url("../img/Tela6/fotoEstudio.png");
     background-size: cover;
     background-position: center;
     width: 90%;
@@ -203,7 +203,7 @@ hr {
 
 #capa {
     display: flex;
-    background-image: url("/img/Tela6/Capa.png");
+    background-image: url("../img/Tela6/Capa.png");
     background-size: cover;
     width: 100%;
     height: 20vh;
