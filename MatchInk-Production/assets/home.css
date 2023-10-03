@@ -1,0 +1,100 @@
+@import url('../assets/fonts3.css');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+@media (max-width: 570px) {
+    body {
+        background-image: url(../img/Tela1/imagemFundo.png);
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400px;
+        color: #fff;
+    }
+    main .logo-principal #logo {
+        height: 10rem;
+        margin-top: 190px;
+        margin-bottom: 110px;
+    }
+
+    main .logo-principal {
+        display: flex;
+        justify-content: center;
+    }
+
+    main .texto1 {
+        width: 350px;
+    }
+
+    main .texto1 p {
+        font-size: 2em;
+        word-wrap: break-word;
+        text-align: center;
+        text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    main .texto1 img {
+        height: 30px;
+        position: relative;
+        left: 158px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    main .texto1 .criar-conta {
+        width: 350px;
+        height: 50px;
+        font-size: 30px;
+        color: #fff;
+        background-color: #000000;
+        border: none;
+        border-radius: 7px;
+        margin-bottom: 50px;
+    }
+
+    main .texto2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main .texto2 p {
+        font-size: 1.4em;
+        margin-bottom: 30px;
+        text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5)
+        
+    }
+
+    main .texto2 .entrar {
+        width: 100px;
+        height: 35px;
+        color: #fff;
+        background-color: #000000;
+        border: none;
+        border-radius: 7px;
+        font-size: 20px;
+        margin-bottom: 70px;
+    }
+
+    main .logo-google {
+        width: 300px;
+        border-radius: 7px;
+        margin-bottom: 10px;
+    }
+
+    main .logo-facebook {
+        width: 300px;
+        border-radius: 7px;
+    }
+
+    main .login-google, main .login-facebook {
+        display: flex;
+        justify-content: center;
+    }
+}
