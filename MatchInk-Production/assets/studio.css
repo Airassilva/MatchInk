@@ -1,0 +1,148 @@
+*{
+    font-family: 'Poppins', sans-serif ;
+	padding: 0;
+	margin: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+#imagemStudio img{
+    width: 100%;
+    height: 250px;
+    min-height: 250px;
+    max-height: 250px;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+#corpo{
+    margin: 0 1.5em;
+}
+
+#headStudio{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+#iconHeadStudio{
+    display: flex;
+    justify-content: right;
+    margin: 0 auto;
+}
+#iconSalvar{
+    width: 30px;
+    height: 30px;
+}
+#iconInsta{
+    width: 24px;
+    height: 30px
+}
+#descStudio{
+    margin: 0;
+}
+#sobreStudio h3{
+    color: red;
+    font-weight: 400;
+    font-size: 1em;
+}
+#textStudio{
+    font-size: 0.8em;
+}
+#dataLocalStudio{
+    margin: 1.5em 0 1em 0;
+    display: flex;
+}
+#dataStudio{
+    display: flex;
+    width: 40%;
+}
+#localStudio{
+    display: flex;
+    width: 60%
+}
+#localStudio h3, #dataStudio h3{
+    font-size: 0.9em;
+}
+#localStudio div, #dataStudio div{
+    margin: auto 0;
+}
+#iconPin {
+    width: 24px;
+    margin: 0 1em 0 0;
+}
+#iconData{
+    width: 28px;
+    margin: 0 1em 0 0;
+}
+
+
+#residentes{
+    text-align: center;
+}
+#tituloResidentes h4{
+    font-weight: 500;
+}
+#carrosselResidentes{
+    display: flex;
+    justify-content: center;
+    margin: 0.5em 0;
+}
+#carrosselResidentes ul{
+    display: flex;
+}
+#carrosselResidentes li{
+    margin: 0 0.5em;
+}
+#carrosselResidentes h4{
+    font-weight: 500;
+    font-size: 0.9em;
+}
+
+#convidados{
+    text-align: center;
+}
+#tituloConvidados h4{
+    font-weight: 500;
+}
+#carrosselConvidados{
+    display: flex;
+    justify-content: center;
+    margin: 0.5em 0;
+}
+#carrosselConvidados ul{
+    display: flex;
+    margin: 0 auto;
+}
+#carrosselConvidados li{
+    margin: 0 0.5em;
+}
+#carrosselConvidados h4{
+    font-weight: 500;
+    font-size: 0.9em;
+}
+
+footer{
+    background: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    box-shadow: inset;
+    position:sticky;
+    left: 0;
+    bottom: 0;
+}
+footer div{
+    margin: 0.5em 1em;
+}
+#userIcon{
+    width: 30px;
+}
+#homeIcon{
+    width: 30px;
+}
+#favoriteIcon{
+    width: 30px;
+}
