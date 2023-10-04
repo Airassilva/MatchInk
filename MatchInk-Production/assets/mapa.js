@@ -27,11 +27,38 @@ const markers = {
 		"properties": {
 			"nome": "M2D Tattoo Studio"
 		}
-	}
+	},
+	{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-34.9099178, -8.0450110]
+		},
+		"properties": {
+			"nome": "Torre Studio"
+		}
+	},
+	{
+		"type": "Feature",
+		"geometry": {
+			"type": "Point",
+			"coordinates": [-34.905842, -8.047070]
+		},
+		"properties": {
+			"nome": "Madalena Tatuagens"
+		}
+	},
 	]
 };
 
-
+// map.addControl(
+// 	new maptilersdk.GeolocateControl({
+// 		positionOptions: {
+// 			enableHighAccuracy: true
+// 		},
+// 		trackUserLocation: true
+// 	})
+// );
 
 markers.features.forEach(function (marker) {
 	new maptilersdk.Marker()
@@ -39,29 +66,10 @@ markers.features.forEach(function (marker) {
 		.setPopup(new maptilersdk.Popup()
 		.setHTML(`<h1 class="pop_up">
 					<a href="./MatchInk-Production/studio.html">
-						Studio Recife
+						${marker.properties.nome}
 					</a>
 				</h1>
 				<p>Descrição Studio</p>
 		`))
 		.addTo(map);
-
 });
-
-map.on('click', 'places', (e) => {
-	var coordinates = e.features[0].geometry.coordinates.slice();
-	var description = e.features[0].properties.description;
-
-	// Ensure that if the map is zoomed out such that multiple
-	// copies of the feature are visible, the popup appears
-	// over the copy being pointed to.
-	while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
-		coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
-	}
-
-	new maptilersdk.Popup()
-		.setLngLat(coordinates)
-		.setHTML(description)
-		.addTo(map);
-});
-
