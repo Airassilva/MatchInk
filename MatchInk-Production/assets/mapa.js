@@ -32,8 +32,36 @@ const markers = {
 };
 
 
+
 markers.features.forEach(function (marker) {
 	new maptilersdk.Marker()
 		.setLngLat(marker.geometry.coordinates)
+		.setPopup(new maptilersdk.Popup()
+		.setHTML(`<h1 class="pop_up">
+					<a href="./MatchInk-Production/studio.html">
+						Studio Recife
+					</a>
+				</h1>
+				<p>Descrição Studio</p>
+		`))
+		.addTo(map);
+
+});
+
+map.on('click', 'places', (e) => {
+	var coordinates = e.features[0].geometry.coordinates.slice();
+	var description = e.features[0].properties.description;
+
+	// Ensure that if the map is zoomed out such that multiple
+	// copies of the feature are visible, the popup appears
+	// over the copy being pointed to.
+	while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+		coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+	}
+
+	new maptilersdk.Popup()
+		.setLngLat(coordinates)
+		.setHTML(description)
 		.addTo(map);
 });
+

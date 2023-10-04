@@ -12,7 +12,10 @@ body {
 	align-items: center;
 	justify-content: space-between;
 }
-
+a{
+	text-decoration: none;
+	color: red;
+}
 #map {
 	position: absolute;
 	top: 0;
@@ -63,6 +66,9 @@ footer {
 	height: 21px;
 }
 
+.maplibregl-popup{
+    width: 200px;
+}
 @media (min-width: 1080px) {
 	#pesquisa {
 		margin-top: 1%;
