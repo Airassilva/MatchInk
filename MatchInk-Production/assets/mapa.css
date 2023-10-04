@@ -66,8 +66,12 @@ footer {
 	height: 21px;
 }
 
-.maplibregl-popup{
-    width: 200px;
+.maplibregl-popup {
+	font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+	box-sizing: border-box;
+}
+.maplibregl-popup-content{
+	width: fit-content;
 }
 @media (min-width: 1080px) {
 	#pesquisa {

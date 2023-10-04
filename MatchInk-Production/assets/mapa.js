@@ -51,14 +51,14 @@ const markers = {
 	]
 };
 
-// map.addControl(
-// 	new maptilersdk.GeolocateControl({
-// 		positionOptions: {
-// 			enableHighAccuracy: true
-// 		},
-// 		trackUserLocation: true
-// 	})
-// );
+ map.addControl(
+ 	new maptilersdk.GeolocateControl({
+ 		positionOptions: {
+ 			enableHighAccuracy: true
+ 		},
+ 		trackUserLocation: true
+ 	})
+ );
 
 markers.features.forEach(function (marker) {
 	new maptilersdk.Marker()
@@ -70,6 +70,8 @@ markers.features.forEach(function (marker) {
 					</a>
 				</h1>
 				<p>Descrição Studio</p>
+				<iframe src="./MatchInk-Production/studio.html" style="height:600px;width:700px; background-color:white;">
+				</iframe>
 		`))
 		.addTo(map);
 });
